@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/Logo.png"; // Update path
+import Logo from "../../assets/Logo.png";
 import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";

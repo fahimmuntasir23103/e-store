@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiSearch, FiHeart, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
+import { FiSearch, FiHeart, FiChevronDown, FiChevronRight , FiMenu, FiX } from "react-icons/fi";
 import PrimaryProduct from "../../Components/PrimaryProduct/PrimaryProduct";
 
 const Shop = () => {
@@ -74,7 +74,7 @@ const Shop = () => {
       {/* Navigation */}
       <nav className="bg-white z-90">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14">
+          <div className="flex items-center justify-between h-14 py-10">
             <div className="flex items-center space-x-4 md:space-x-8">
               <a
                 href="#"
@@ -82,12 +82,14 @@ const Shop = () => {
               >
                 Home
               </a>
+              <FiChevronRight/>
               <a
                 href="#"
                 className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
               >
                 Catalog
               </a>
+              <FiChevronRight/>
               <a
                 href="#"
                 className="text-gray-900 font-medium text-sm md:text-base"

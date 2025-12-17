@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { FiChevronRight } from 'react-icons/fi';
 import { 
   MdSearch, 
   MdChevronRight, 
@@ -39,20 +40,34 @@ export default function Blogs() {
 
   return (
     <div className="bg-white min-h-screen text-black">
-      {/* Breadcrumbs - Following Screenshot_6 */}
-      <div className="max-w-7xl mx-auto px-4 py-6">
-        <div className="flex items-center gap-1 text-sm text-gray-400">
-          <span>Home</span>
-          <MdChevronRight size={18} />
-          <span className="text-black font-medium">Blog</span>
-        </div>
-      </div>
+      {/* Breadcrumbs */}
+      <nav className="bg-white z-90">
+              <div className="max-w-7xl mx-auto px-4">
+                <div className="flex items-center justify-between h-14 py-10">
+                  <div className="flex items-center space-x-4 md:space-x-8">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
+                    >
+                      Home
+                    </a>
+                    <FiChevronRight />
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
+                    >
+                      Blog
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
 
       <div className="max-w-7xl mx-auto px-4 pb-20">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
           <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
           
-          {/* Search bar - Matches your Header Search style */}
+          {/* Search bar  */}
           <div className="relative w-full md:w-80">
             <input 
               type="text" 
@@ -66,7 +81,7 @@ export default function Blogs() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Sidebar - Matches Screenshot_7 Filter Sidebar */}
+          {/* Sidebar */}
           <aside className="lg:w-64 flex-shrink-0">
             <h3 className="font-bold text-lg mb-6">Categories</h3>
             <div className="flex flex-col gap-2">
@@ -90,7 +105,7 @@ export default function Blogs() {
             </div>
           </aside>
 
-          {/* Blog List - Horizontal Layout (Matches Screenshot_9 List Vibe) */}
+          {/* Blog List */}
           <main className="flex-1 space-y-8">
             {filteredPosts.map((post) => (
               <div 

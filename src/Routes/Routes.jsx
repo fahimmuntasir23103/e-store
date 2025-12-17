@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Shop from "../Pages/Shop/Shop";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+import Contact from "../Pages/Contact/Contact";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +21,20 @@ const router = createBrowserRouter([
         Component: Shop
       },
       {
+        path: "/blogs",
+        Component: Blogs
+      },
+      {
         path: "/productdetails",
         Component: ProductDetails
       },
       {
         path: "/about",
         Component: About,
+      },
+      {
+        path: "/contact",
+        Component: Contact,
       },
     ],
   },

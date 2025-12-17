@@ -1,8 +1,8 @@
 import Ipad from "../../assets/iPad.png";
 
-const SecondaryProduct = () => {
+const SecondaryProduct = ({bgColor}) => {
     return (
-        <div className="bg-[#EAEAEA]">
+        <div className="" style={{backgroundColor: bgColor}}>
           <img src={Ipad} alt="" />
           <div className="space-y-4 p-8 pt-0">
             <h2 className="font-light text-[33px]">Ipad Pro</h2>

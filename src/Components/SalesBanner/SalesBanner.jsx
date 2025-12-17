@@ -2,7 +2,7 @@ import SalesBannerImg from "../../assets/banner1.png";
 
 const SalesBanner = () => {
   return (
-    <div className="2xl:max-w-[1280px] mx-auto mb-5 relative">
+    <div className="2xl:max-w-[1280px] mx-auto relative">
       <img className="" src={SalesBannerImg} alt="" />
       <div className="absolute top-1/2 left-1/2 -translate-1/2 text-center">
         <h2 className="text-7xl font-thin text-white mb-2 tracking-wide">

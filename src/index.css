@@ -4,3 +4,9 @@
 *{
     font-family: "Inter", sans-serif;
 }
+body{
+    background-color: "";
+}
+.active{
+    color: #101828
+}

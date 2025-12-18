@@ -5,32 +5,21 @@ import {
   FiClock,
   FiChevronRight,
 } from "react-icons/fi";
+import { MdChevronRight } from "react-icons/md";
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* Breadcrumb */}
-      <nav className="bg-white z-90">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14 py-10">
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Home
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Contact
-              </a>
-            </div>
+      <div className="border-b border-gray-100">
+        <div className="max-w-7xl mx-auto p-6">
+          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+            <span>Home</span> <MdChevronRight size={14} />
+            <span>Journal</span> <MdChevronRight size={14} />
+            <span className="text-black">Article Detail</span>
           </div>
         </div>
-      </nav>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-12">
         {/* Header */}
@@ -176,10 +165,14 @@ export default function Contact() {
             {/* Map */}
             <div className="bg-white rounded-lg p-4 border border-gray-200 h-64 lg:h-80">
               <div className="w-full h-full bg-gray-200 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <FiMapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-500 text-sm">Map Location</p>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d613.5027865788273!2d89.54235871400195!3d22.844586568155645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9a9b495951cf%3A0x2e4bf2dcf241b56d!2sKhulna%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1766057962593!5m2!1sen!2sbd"
+                 className="h-full w-full"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
 

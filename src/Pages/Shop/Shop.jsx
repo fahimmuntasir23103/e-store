@@ -1,54 +1,62 @@
 import { useState } from "react";
-import { FiSearch, FiHeart, FiChevronDown, FiChevronRight , FiMenu, FiX } from "react-icons/fi";
+import {
+  FiSearch,
+  FiHeart,
+  FiChevronDown,
+  FiChevronRight,
+  FiMenu,
+  FiX,
+} from "react-icons/fi";
 import PrimaryProduct from "../../Components/PrimaryProduct/PrimaryProduct";
+import { MdChevronRight } from "react-icons/md";
 
 const Shop = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-//   const products = [
-//     {
-//       id: 1,
-//       name: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
-//       price: "$1437",
-//       image:
-//         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
-//     },
-//     {
-//       id: 2,
-//       name: "Apple iPhone 11 128GB White (MQ233)",
-//       price: "$510",
-//       image:
-//         "https://images.unsplash.com/photo-1592286927505-c0d0eb5ee9d2?w=200&h=200&fit=crop",
-//     },
-//     {
-//       id: 3,
-//       name: "Apple iPhone 11 128GB White (MQ233)",
-//       price: "$550",
-//       image:
-//         "https://images.unsplash.com/photo-1592286927505-c0d0eb5ee9d2?w=200&h=200&fit=crop",
-//     },
-//     {
-//       id: 4,
-//       name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
-//       price: "$1499",
-//       image:
-//         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
-//     },
-//     {
-//       id: 5,
-//       name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
-//       price: "$1399",
-//       image:
-//         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
-//     },
-//     {
-//       id: 6,
-//       name: "Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)",
-//       price: "$1600",
-//       image:
-//         "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?w=200&h=200&fit=crop",
-//     },
-//   ];
+  //   const products = [
+  //     {
+  //       id: 1,
+  //       name: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+  //       price: "$1437",
+  //       image:
+  //         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Apple iPhone 11 128GB White (MQ233)",
+  //       price: "$510",
+  //       image:
+  //         "https://images.unsplash.com/photo-1592286927505-c0d0eb5ee9d2?w=200&h=200&fit=crop",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "Apple iPhone 11 128GB White (MQ233)",
+  //       price: "$550",
+  //       image:
+  //         "https://images.unsplash.com/photo-1592286927505-c0d0eb5ee9d2?w=200&h=200&fit=crop",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
+  //       price: "$1499",
+  //       image:
+  //         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
+  //       price: "$1399",
+  //       image:
+  //         "https://images.unsplash.com/photo-1678652197662-01f4f75d744b?w=200&h=200&fit=crop",
+  //     },
+  //     {
+  //       id: 6,
+  //       name: "Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)",
+  //       price: "$1600",
+  //       image:
+  //         "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?w=200&h=200&fit=crop",
+  //     },
+  //   ];
 
   const brands = [
     { name: "Apple", count: 110, checked: true },
@@ -72,44 +80,15 @@ const Shop = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white z-90">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14 py-10">
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Home
-              </a>
-              <FiChevronRight/>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Catalog
-              </a>
-              <FiChevronRight/>
-              <a
-                href="#"
-                className="text-gray-900 font-medium text-sm md:text-base"
-              >
-                Smartphones
-              </a>
-            </div>
-            <button
-              onClick={() => setSidebarOpen(!sidebarOpen)}
-              className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors z-[110]"
-            >
-              {sidebarOpen ? (
-                <FiX className="w-6 h-6" />
-              ) : (
-                <FiMenu className="w-6 h-6" />
-              )}
-            </button>
+      <div className="border-b border-gray-100">
+        <div className="max-w-7xl mx-auto p-6">
+          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+            <span>Home</span> <MdChevronRight size={14} />
+            <span>Journal</span> <MdChevronRight size={14} />
+            <span className="text-black">Article Detail</span>
           </div>
         </div>
-      </nav>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 py-4 md:py-6">
         <div className="flex gap-4 md:gap-6 relative">

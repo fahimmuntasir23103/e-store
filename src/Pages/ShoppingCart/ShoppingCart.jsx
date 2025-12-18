@@ -1,0 +1,136 @@
+import React from 'react';
+import { MdClose, MdAdd, MdRemove } from 'react-icons/md';
+
+const cartItems = [
+  {
+    id: "#25139526913984",
+    name: "Apple iPhone 14 Pro Max 128Gb Deep Purple",
+    id_label: "#25139526913984",
+    price: "1399",
+    img: "https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?q=80&w=200"
+  },
+  {
+    id: "#53459358345",
+    name: "AirPods Max Silver",
+    id_label: "#53459358345",
+    price: "549",
+    img: "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?q=80&w=200"
+  },
+  {
+    id: "#69632324",
+    name: "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+    id_label: "#69632324",
+    price: "399",
+    img: "https://images.unsplash.com/photo-1544117518-30dd0f787a3b?q=80&w=200"
+  }
+];
+
+export default function ExactShoppingCart() {
+  return (
+    <div className="bg-white min-h-screen text-black font-sans p-6 md:p-20">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        {/* LEFT: SHOPPING CART LIST */}
+        <div className="lg:col-span-7">
+          <h1 className="text-xl font-bold mb-10">Shopping Cart</h1>
+          
+          <div className="space-y-0">
+            {cartItems.map((item, index) => (
+              <div key={index} className="flex items-center gap-6 py-8 border-b border-gray-100 last:border-0">
+                {/* Product Image */}
+                <div className="w-20 h-20 flex-shrink-0">
+                  <img src={item.img} alt="" className="w-full h-full object-contain" />
+                </div>
+                
+                {/* Product Text */}
+                <div className="flex-grow max-w-[280px]">
+                  <h3 className="text-sm font-bold leading-tight">{item.name}</h3>
+                  <p className="text-[11px] text-gray-400 mt-1">{item.id_label}</p>
+                </div>
+
+                {/* Quantity Selector */}
+                <div className="flex items-center gap-3">
+                  <button className="text-gray-400"><MdRemove size={16} /></button>
+                  <div className="w-10 h-8 border border-gray-200 flex items-center justify-center rounded text-sm font-medium">
+                    1
+                  </div>
+                  <button className="text-gray-400"><MdAdd size={16} /></button>
+                </div>
+
+                {/* Price */}
+                <div className="flex-grow text-right">
+                  <span className="font-bold text-lg">${item.price}</span>
+                </div>
+
+                {/* Close Icon */}
+                <button className="ml-4 text-gray-300">
+                  <MdClose size={20} />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT: ORDER SUMMARY CARD */}
+        <div className="lg:col-span-5">
+          <div className="border border-gray-100 rounded-xl p-8 md:p-10">
+            <h2 className="text-lg font-bold mb-8">Order Summary</h2>
+            
+            <div className="space-y-6">
+              {/* Promo Code Input */}
+              <div className="space-y-2">
+                <label className="text-[11px] font-semibold text-gray-500">Discount code / Promo code</label>
+                <input 
+                  type="text" 
+                  placeholder="Code" 
+                  className="w-full border border-gray-200 p-3 rounded-lg text-sm outline-none placeholder:text-gray-300"
+                />
+              </div>
+
+              {/* Bonus Card Input */}
+              <div className="space-y-2 pb-6 border-b border-gray-100">
+                <label className="text-[11px] font-semibold text-gray-500">Your bonus card number</label>
+                <div className="relative">
+                  <input 
+                    type="text" 
+                    placeholder="Enter Card Number" 
+                    className="w-full border border-gray-200 p-3 pr-20 rounded-lg text-sm outline-none placeholder:text-gray-300"
+                  />
+                  <button className="absolute right-1.5 top-1.5 bottom-1.5 px-4 border border-black rounded-md text-[10px] font-bold bg-white hover:bg-black hover:text-white transition-all">
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              {/* Pricing Details */}
+              <div className="space-y-4">
+                <div className="flex justify-between items-center font-bold text-sm">
+                  <span>Subtotal</span>
+                  <span>$2347</span>
+                </div>
+                <div className="flex justify-between items-center text-gray-400 text-sm font-medium">
+                  <span>Estimated Tax</span>
+                  <span className="text-black font-bold">$50</span>
+                </div>
+                <div className="flex justify-between items-center text-gray-400 text-sm font-medium">
+                  <span>Estimated shipping & Handling</span>
+                  <span className="text-black font-bold">$29</span>
+                </div>
+                <div className="flex justify-between items-center pt-4 font-bold text-lg">
+                  <span>Total</span>
+                  <span>$2426</span>
+                </div>
+              </div>
+
+              {/* Checkout Button */}
+              <button className="w-full bg-black text-white py-4 rounded-lg font-bold text-sm mt-4 hover:bg-gray-900 transition-colors">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}

@@ -8,8 +8,9 @@ import {
   FiChevronRight,
 } from "react-icons/fi";
 import { useState } from "react";
-import Iphone from "../../assets/Iphone.png"
+import Iphone from "../../assets/Iphone.png";
 import PrimaryProduct from "../../Components/PrimaryProduct/PrimaryProduct";
+import { MdChevronRight } from "react-icons/md";
 
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState("purple");
@@ -106,51 +107,17 @@ export default function ProductDetails() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white bg-gray-50">
       {/* Breadcrumb */}
-
-      <nav className="bg-white z-90">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14 py-10">
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Home
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Catalog
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-900 font-medium text-sm md:text-base"
-              >
-                Smartphones
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-900 font-medium text-sm md:text-base"
-              >
-                Apple
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-900 font-medium text-sm md:text-base"
-              >
-                iPhone 14 Pro Max
-              </a>
-            </div>
+      <div className="border-b bg-white border-gray-100">
+        <div className="max-w-7xl mx-auto p-6">
+          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+            <span>Home</span> <MdChevronRight size={14} />
+            <span>Journal</span> <MdChevronRight size={14} />
+            <span className="text-black">Article Detail</span>
           </div>
         </div>
-      </nav>
+      </div>
 
       {/* Product Section */}
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -164,7 +131,9 @@ export default function ProductDetails() {
                   key={index}
                   onClick={() => setSelectedImage(index)}
                   className={`w-16 h-16 rounded-lg border-2 overflow-hidden ${
-                    selectedImage === index ? "border-black/60" : "border-gray-200"
+                    selectedImage === index
+                      ? "border-black/60"
+                      : "border-gray-200"
                   }`}
                 >
                   <img
@@ -466,11 +435,10 @@ export default function ProductDetails() {
         <div className="mb-8 bg-white p-8">
           <h2 className="text-2xl font-bold mb-6">Related Products</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-          <PrimaryProduct/>
-          <PrimaryProduct/>
-          <PrimaryProduct/>
-          <PrimaryProduct/>
+            <PrimaryProduct />
+            <PrimaryProduct />
+            <PrimaryProduct />
+            <PrimaryProduct />
           </div>
         </div>
       </div>

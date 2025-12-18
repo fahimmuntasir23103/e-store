@@ -6,6 +6,9 @@ import Shop from "../Pages/Shop/Shop";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import Contact from "../Pages/Contact/Contact";
 import Blogs from "../Pages/Blogs/Blogs";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
+import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
+import Wishlist from "../Components/Wishlist/Wishlist";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +28,11 @@ const router = createBrowserRouter([
         Component: Blogs
       },
       {
-        path: "/productdetails",
+        path: "/blogDetails",
+        Component: BlogDetails
+      },
+      {
+        path: "/productDetails",
         Component: ProductDetails
       },
       {
@@ -35,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         Component: Contact,
+      },
+      {
+        path: "/cart",
+        Component: ShoppingCart
+      },
+      {
+        path: "/wishlist",
+        Component: Wishlist
       },
     ],
   },

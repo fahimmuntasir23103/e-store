@@ -3,7 +3,7 @@ import Logo from "../../assets/Logo.png";
 import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,14 +53,18 @@ const Header = () => {
 
           {/* Icons Section */}
           <div className="flex items-center gap-4 lg:gap-6">
-            <HiOutlineHeart
-              className="cursor-pointer hover:text-red-500 duration-200"
-              size={28}
-            />
-            <IoCartOutline
-              className="cursor-pointer hover:text-blue-500 duration-200"
-              size={28}
-            />
+            <Link to="/wishlist">
+              <HiOutlineHeart
+                className="cursor-pointer hover:text-red-500 duration-200"
+                size={28}
+              />
+            </Link>
+            <Link to="/cart">
+              <IoCartOutline
+                className="cursor-pointer hover:text-blue-500 duration-200"
+                size={28}
+              />
+            </Link>
             {/* Hide User on mobile to save space, or keep it if preferred */}
             <FiUser
               className="cursor-pointer hidden sm:block hover:text-gray-900 duration-200"

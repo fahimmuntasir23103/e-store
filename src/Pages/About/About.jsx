@@ -8,6 +8,7 @@ import {
   FiShield,
   FiChevronRight,
 } from "react-icons/fi";
+import { MdChevronRight } from "react-icons/md";
 
 export default function AboutUsPage() {
   const stats = [
@@ -96,27 +97,15 @@ export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Breadcrumb */}
-      <nav className="bg-white z-90">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14 py-10">
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                Home
-              </a>
-              <FiChevronRight />
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 text-sm md:text-base"
-              >
-                About
-              </a>
-            </div>
+      <div className="border-b bg-white border-gray-100">
+        <div className="max-w-7xl mx-auto p-6">
+          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
+            <span>Home</span> <MdChevronRight size={14} />
+            <span>Journal</span> <MdChevronRight size={14} />
+            <span className="text-black">Article Detail</span>
           </div>
         </div>
-      </nav>
+      </div>
 
       {/* Hero Section */}
       <div className="bg-white">

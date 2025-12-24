@@ -1,4 +1,5 @@
-import SalesBannerImg from "../../assets/banner1.png";
+import { Link } from "react-router";
+import SalesBannerImg from "../../../../assets/banner1.png";
 
 const SalesBanner = () => {
   return (
@@ -11,9 +12,11 @@ const SalesBanner = () => {
         <p className="text-base font-normal text-[#787878]">
           Commodo fames vitae vitae leo mauris in. Eu consequat.
         </p>
+        <Link to="/shop">
         <button className="font-medium text-base text-white border-2 border-[#909090] rounded-lg py-4 px-14 mt-10 cursor-pointer">
           Shop Now
         </button>
+        </Link>
       </div>
     </div>
   );

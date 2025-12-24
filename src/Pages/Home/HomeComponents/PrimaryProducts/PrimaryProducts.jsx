@@ -1,10 +1,7 @@
-import { use } from "react";
-import { dataContext } from "../../Context/Context";
 import PrimaryProduct from "../PrimaryProduct/PrimaryProduct";
 
+
 const PrimaryProducts = () => {
-  const { products } = use(dataContext);
-  console.log(products);
   return (
     <section className="2xl:max-w-[1280px] lg:max-w-[1120px] mx-auto px-4 space-y-8 mb-14">
       <ul className="flex items-center gap-8 font-medium text-lg">
@@ -15,9 +12,14 @@ const PrimaryProducts = () => {
         <li className="text-[#8B8B8B] cursor-pointer">Featured Products</li>
       </ul>
       <div className="grid grid-cols-4 gap-4">
-        {products.slice(0,4).map((product, idx) => (
-          <PrimaryProduct key={idx} product={product} />
-        ))}
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
+        <PrimaryProduct/>
       </div>
     </section>
   );

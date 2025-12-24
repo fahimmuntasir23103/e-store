@@ -1,0 +1,1712 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A54",
+    "brand": "Samsung",
+    "status": "In Stock",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 449,
+      "original_price": 599,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/kVLYcQH1/samsung-galaxy-a54-5g-full-display-size-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/kVLYcQH1/samsung-galaxy-a54-5g-full-display-size-image.webp",
+        "https://i.ibb.co.com/TxW71W0K/samsung-galaxy-a54-5g-full-back-camera-side-image.webp",
+        "https://i.ibb.co.com/qMb8rxcQ/samsung-galaxy-a54-5g-back-side-image.webp",
+        "https://i.ibb.co.com/qMb8rxcQ/samsung-galaxy-a54-5g-back-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.4\"",
+        "type": "AMOLED",
+        "resolution": "2340×1080",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Exynos 1380",
+        "cores": 8
+      },
+      "battery": "5000 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.4,
+      "total_count": 321,
+      "featured": [
+        {
+          "user": "Alex Riv",
+          "rating": 5,
+          "comment": "Great display and battery.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 6,
+        "2": 9,
+        "3": 16,
+        "4": 32,
+        "5": 256
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 2,
+    "name": "iPhone 14 Pro Max",
+    "brand": "Apple",
+    "status": "In Stock",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 1399,
+      "original_price": 1499,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/DfTBCG0G/apple-iphone-14-pro-max-full-display-size-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/DfTBCG0G/apple-iphone-14-pro-max-full-display-size-image.webp",
+        "https://i.ibb.co.com/VWgp0md5/apple-iphone-14-pro-max-back-image.webp",
+        "https://i.ibb.co.com/pBdt7hsK/apple-iphone-14-pro-max-power-button-side-image.webp",
+        "https://i.ibb.co.com/fd0VLKxV/apple-iphone-14-pro-max-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.7\"",
+        "type": "OLED",
+        "resolution": "2796×1290",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Apple A16 Bionic",
+        "cores": 6
+      },
+      "battery": "4323 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.8,
+      "total_count": 125,
+      "featured": [
+        {
+          "user": "Grace Carey",
+          "rating": 4,
+          "comment": "Amazing camera.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 2,
+        "2": 3,
+        "3": 6,
+        "4": 12,
+        "5": 100
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy S23",
+    "brand": "Samsung",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 799,
+      "original_price": 899,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/Qjp022Tc/samsung-galaxy-s23-front-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/Qjp022Tc/samsung-galaxy-s23-front-image.webp",
+        "https://i.ibb.co.com/fJpRwXT/samsung-galaxy-s23-back-side-image.webp",
+        "https://i.ibb.co.com/ycHhZYJZ/samsung-galaxy-s23-side-image.webp",
+        "https://i.ibb.co.com/tFjycqH/samsung-galaxy-s23-side-view.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.1\"",
+        "type": "AMOLED",
+        "resolution": "2340×1080",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8 Gen 2",
+        "cores": 8
+      },
+      "battery": "3900 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 540,
+      "featured": [
+        {
+          "user": "John Carter",
+          "rating": 5,
+          "comment": "Fast and compact.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 10,
+        "2": 16,
+        "3": 27,
+        "4": 54,
+        "5": 432
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 4,
+    "name": "Google Pixel 8",
+    "brand": "Google",
+    "status": "In Stock",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 699,
+      "original_price": 799,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/Z5pzt8x/google-pixel-8-front-side-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/Z5pzt8x/google-pixel-8-front-side-image.webp",
+        "https://i.ibb.co.com/LX3dHbST/google-pixel-8-back-side-image.webp",
+        "https://i.ibb.co.com/m5D2XBjS/google-pixel-8-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.2\"",
+        "type": "OLED",
+        "resolution": "2400×1080",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Tensor G3",
+        "cores": 9
+      },
+      "battery": "4575 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.6,
+      "total_count": 312,
+      "featured": [
+        {
+          "user": "Emma Stone",
+          "rating": 5,
+          "comment": "Best Android camera.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 6,
+        "2": 9,
+        "3": 15,
+        "4": 31,
+        "5": 249
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 5,
+    "name": "OnePlus 11",
+    "brand": "OnePlus",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 749,
+      "original_price": 829,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/BHZrgvhG/oneplus-11-5g-front-side-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/BHZrgvhG/oneplus-11-5g-front-side-image.webp",
+        "https://i.ibb.co.com/jk93ZLp6/oneplus-11-5g-back-side-image.webp",
+        "https://i.ibb.co.com/KcmTKsvd/oneplus-11-5g-side-image.webp",
+        "https://i.ibb.co.com/VW1bMLd6/oneplus-11-5g-product-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.7\"",
+        "type": "AMOLED",
+        "resolution": "3216×1440",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8 Gen 2",
+        "cores": 8
+      },
+      "battery": "5000 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.5,
+      "total_count": 287,
+      "featured": [
+        {
+          "user": "Liam Wong",
+          "rating": 4,
+          "comment": "Smooth performance.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 5,
+        "2": 8,
+        "3": 14,
+        "4": 28,
+        "5": 229
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 6,
+    "name": "Xiaomi 13 Pro",
+    "brand": "Xiaomi",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 899,
+      "original_price": 999,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/RTVkRcLQ/xiaomi-13-pro-front-side-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/RTVkRcLQ/xiaomi-13-pro-front-side-image.webp",
+        "https://i.ibb.co.com/Gv1CsBJz/xiaomi-13-pro-back-side-image.webp",
+        "https://i.ibb.co.com/ycfcw4MR/xiaomi-13-pro-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.73\"",
+        "type": "AMOLED",
+        "resolution": "3200×1440",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8 Gen 2",
+        "cores": 8
+      },
+      "battery": "4820 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.6,
+      "total_count": 198,
+      "featured": [
+        {
+          "user": "Daniel Lee",
+          "rating": 5,
+          "comment": "Flagship camera.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 3,
+        "2": 5,
+        "3": 9,
+        "4": 19,
+        "5": 158
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 7,
+    "name": "Realme GT Neo 5",
+    "brand": "Realme",
+    "status": "In Stock",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 399,
+      "original_price": 449,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/qLDd0FxS/realme-gt-neo-5-front-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/qLDd0FxS/realme-gt-neo-5-front-image.webp",
+        "https://i.ibb.co.com/nqgwtZyQ/realme-gt-neo-5-back-image.webp",
+        "https://i.ibb.co.com/q3RcHWmf/realme-gt-neo-5-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.74\"",
+        "type": "AMOLED",
+        "resolution": "2772×1240",
+        "refresh_rate": "144 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8+",
+        "cores": 8
+      },
+      "battery": "5000 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.4,
+      "total_count": 176,
+      "featured": [
+        {
+          "user": "Kevin Tran",
+          "rating": 4,
+          "comment": "Crazy fast charging.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 3,
+        "2": 5,
+        "3": 8,
+        "4": 17,
+        "5": 140
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 8,
+    "name": "Vivo X90 Pro",
+    "brand": "Vivo",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 849,
+      "original_price": 949,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/hxvZWcYD/vivo-x100-pro-full-display-size-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/hxvZWcYD/vivo-x100-pro-full-display-size-image.webp",
+        "https://i.ibb.co.com/Xrh21cH6/vivo-x100-pro-full-back-camera-side-image.webp",
+        "https://i.ibb.co.com/wZvFwtnt/vivo-x100-pro-back-side-image.webp",
+        "https://i.ibb.co.com/8L4xVP9X/vivo-x100-pro-power-button-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.78\"",
+        "type": "AMOLED",
+        "resolution": "2800×1260",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Dimensity 9200",
+        "cores": 8
+      },
+      "battery": "4870 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.6,
+      "total_count": 164,
+      "featured": [
+        {
+          "user": "Ryan Paul",
+          "rating": 5,
+          "comment": "Excellent photography.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 3,
+        "2": 4,
+        "3": 8,
+        "4": 16,
+        "5": 131
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 9,
+    "name": "Nothing Phone (2)",
+    "brand": "Nothing",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 599,
+      "original_price": 699,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/QFYDX5gn/nothing-phone-2-1.webp",
+      "gallery": [
+        "https://i.ibb.co.com/QFYDX5gn/nothing-phone-2-1.webp",
+        "https://i.ibb.co.com/s9cvb7xH/nothing-phone-2-2.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.7\"",
+        "type": "OLED",
+        "resolution": "2412×1080",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8+ Gen 1",
+        "cores": 8
+      },
+      "battery": "4700 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.5,
+      "total_count": 289,
+      "featured": [
+        {
+          "user": "Chris Nolan",
+          "rating": 4,
+          "comment": "Unique design.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 5,
+        "2": 8,
+        "3": 14,
+        "4": 28,
+        "5": 231
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 10,
+    "name": "iPhone 13",
+    "brand": "Apple",
+    "status": "Stock Out",
+    "category": "Smartphone",
+    "pricing": {
+      "current_price": 699,
+      "original_price": 799,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/V0L7zH5N/apple-iphone-13-full-display-size-image.webp",
+      "gallery": [
+        "https://i.ibb.co.com/V0L7zH5N/apple-iphone-13-full-display-size-image.webp",
+        "https://i.ibb.co.com/XZRvfJVP/apple-iphone-13-full-back-camera-side-image.webp",
+        "https://i.ibb.co.com/pjm08G2R/apple-iphone-13-power-baton-side-image.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "6.1\"",
+        "type": "OLED",
+        "resolution": "2532×1170",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "A15 Bionic",
+        "cores": 6
+      },
+      "battery": "3240 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 634,
+      "featured": [
+        {
+          "user": "Sarah Kim",
+          "rating": 5,
+          "comment": "Still very powerful.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 12,
+        "2": 19,
+        "3": 31,
+        "4": 63,
+        "5": 507
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 11,
+    "name": "Apple MacBook Air M2",
+    "brand": "Apple",
+    "status": "In Stock",
+    "category": "Laptop",
+    "pricing": {
+      "current_price": 1099,
+      "original_price": 1199,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/CpHwvyKY/apple-macbook-air-m2-1.jpg",
+      "gallery": [
+        "https://i.ibb.co.com/CpHwvyKY/apple-macbook-air-m2-1.jpg",
+        "https://i.ibb.co.com/RGfVNXZ8/apple-macbook-air-m2-2.jpg"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "13.6\"",
+        "type": "Liquid Retina",
+        "resolution": "2560×1664",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Apple M2",
+        "cores": 8
+      },
+      "battery": "52.6 Wh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.8,
+      "total_count": 412,
+      "featured": [
+        {
+          "user": "Michael Brown",
+          "rating": 5,
+          "comment": "Silent, fast, and excellent battery life.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 8,
+        "2": 12,
+        "3": 20,
+        "4": 41,
+        "5": 329
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 12,
+    "name": "Samsung Galaxy Tab S9",
+    "brand": "Samsung",
+    "status": "In Stock",
+    "category": "Tablet",
+    "pricing": {
+      "current_price": 799,
+      "original_price": 899,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/jvSWN2Qh/samsung-galaxy-tab-s9-1.png",
+      "gallery": [
+        "https://i.ibb.co.com/jvSWN2Qh/samsung-galaxy-tab-s9-1.png",
+        "https://i.ibb.co.com/mrf8QWrF/samsung-galaxy-tab-s9-3.png",
+        "https://i.ibb.co.com/CppWbSXz/samsung-galaxy-tab-s9-4.png",
+        "https://i.ibb.co.com/fVfYZyFD/samsung-galaxy-tab-s9-2.png"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "11\"",
+        "type": "Dynamic AMOLED 2X",
+        "resolution": "2560×1600",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Snapdragon 8 Gen 2",
+        "cores": 8
+      },
+      "battery": "8400 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 263,
+      "featured": [
+        {
+          "user": "Sarah Khan",
+          "rating": 5,
+          "comment": "Best Android tablet display.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 5,
+        "2": 7,
+        "3": 13,
+        "4": 26,
+        "5": 210
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 13,
+    "name": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "status": "In Stock",
+    "category": "Headphone",
+    "pricing": {
+      "current_price": 349,
+      "original_price": 399,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/ZRxKdV1K/Sony-WH-1000-XM5-Wireless-Noise-Cancelling-Headphones-black.webp",
+      "gallery": [
+        "https://i.ibb.co.com/ZRxKdV1K/Sony-WH-1000-XM5-Wireless-Noise-Cancelling-Headphones-black.webp",
+        "https://i.ibb.co.com/FkBd7KTg/Sony-WH-1000-XM5-Wireless-Noise-Cancelling-Headphones-pink.webp",
+        "https://i.ibb.co.com/JjvrhQN7/Sony-WH-1000-XM5-Wireless-Noise-Cancelling-Headphones-white.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "N/A",
+        "type": "Over-Ear",
+        "resolution": "N/A",
+        "refresh_rate": "N/A",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "QN1 Processor",
+        "cores": 4
+      },
+      "battery": "30 hours",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.9,
+      "total_count": 892,
+      "featured": [
+        {
+          "user": "David Lin",
+          "rating": 5,
+          "comment": "Best noise cancellation ever.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 17,
+        "2": 26,
+        "3": 44,
+        "4": 89,
+        "5": 713
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 14,
+    "name": "Canon EOS R10",
+    "brand": "Canon",
+    "status": "In Stock",
+    "category": "Camera",
+    "pricing": {
+      "current_price": 979,
+      "original_price": 1099,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/RT6JKxbX/canon-eos-r10-01.webp",
+      "gallery": [
+        "https://i.ibb.co.com/RT6JKxbX/canon-eos-r10-01.webp",
+        "https://i.ibb.co.com/B2myZYxy/canon-eos-r10-02.webp",
+        "https://i.ibb.co.com/4nGThW68/canon-eos-r10-03.webp",
+        "https://i.ibb.co.com/zzj0572/canon-eos-r10-04.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "3.0\"",
+        "type": "LCD",
+        "resolution": "1.62M dots",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "DIGIC X",
+        "cores": 4
+      },
+      "battery": "LP-E17",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.6,
+      "total_count": 154,
+      "featured": [
+        {
+          "user": "Alex Morgan",
+          "rating": 5,
+          "comment": "Great mirrorless for beginners.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 3,
+        "2": 4,
+        "3": 7,
+        "4": 15,
+        "5": 123
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 15,
+    "name": "LG 27GP850-B UltraGear Monitor",
+    "brand": "LG",
+    "status": "In Stock",
+    "category": "Monitor",
+    "pricing": {
+      "current_price": 399,
+      "original_price": 449,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/9HyjMnPP/Lg-untragea-monitor-1.jpg",
+      "gallery": [
+        "https://i.ibb.co.com/9HyjMnPP/Lg-untragea-monitor-1.jpg",
+        "https://i.ibb.co.com/C57CHh19/Lg-untragea-monitor-2.jpg",
+        "https://i.ibb.co.com/q3WVLBtD/Lg-untragea-monitor-4.jpg",
+        "https://i.ibb.co.com/3mZFwMXV/Lg-untragea-monitor-3.jpg"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "27\"",
+        "type": "Nano IPS",
+        "resolution": "2560×1440",
+        "refresh_rate": "165 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "N/A",
+        "cores": 0
+      },
+      "battery": "N/A",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 621,
+      "featured": [
+        {
+          "user": "Ryan Cooper",
+          "rating": 5,
+          "comment": "Perfect gaming monitor.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 12,
+        "2": 18,
+        "3": 31,
+        "4": 62,
+        "5": 496
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 16,
+    "name": "PlayStation 5",
+    "brand": "Sony",
+    "status": "Stock Out",
+    "category": "Gaming Console",
+    "pricing": {
+      "current_price": 499,
+      "original_price": 499,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/VpL9f0f5/playstation-5-analog-console-slim-edition-01.webp",
+      "gallery": [
+        "https://i.ibb.co.com/VpL9f0f5/playstation-5-analog-console-slim-edition-01.webp",
+        "https://i.ibb.co.com/WvLtBSkf/playstation-5-analog-console-slim-edition-02.webp",
+        "https://i.ibb.co.com/q3tNyRDy/playstation-5-analog-console-slim-edition-03.webp",
+        "https://i.ibb.co.com/8T6Vj2Q/playstation-5-analog-console-slim-edition-04.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "N/A",
+        "type": "Console",
+        "resolution": "4K",
+        "refresh_rate": "120 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "AMD Zen 2",
+        "cores": 8
+      },
+      "battery": "N/A",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.9,
+      "total_count": 1024,
+      "featured": [
+        {
+          "user": "James Wilson",
+          "rating": 5,
+          "comment": "Next-gen gaming experience.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 20,
+        "2": 30,
+        "3": 51,
+        "4": 102,
+        "5": 819
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 17,
+    "name": "Dell XPS 15",
+    "brand": "Dell",
+    "status": "In Stock",
+    "category": "Laptop",
+    "pricing": {
+      "current_price": 1799,
+      "original_price": 1999,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/Q3ZQTgxK/dell-xps-15-1.jpg",
+      "gallery": [
+        "https://i.ibb.co.com/Q3ZQTgxK/dell-xps-15-1.jpg",
+        "https://i.ibb.co.com/pvJKKNN7/dell-xps-15-4.jpg",
+        "https://i.ibb.co.com/fYNBmMRQ/dell-xps-15-3.jpg",
+        "https://i.ibb.co.com/M5RHtNz2/dell-xps-15-2.jpg"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "15.6\"",
+        "type": "OLED",
+        "resolution": "3456×2160",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "Intel Core i7-13700H",
+        "cores": 14
+      },
+      "battery": "86 Wh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.6,
+      "total_count": 298,
+      "featured": [
+        {
+          "user": "Kevin Patel",
+          "rating": 5,
+          "comment": "Premium build quality.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 5,
+        "2": 8,
+        "3": 14,
+        "4": 29,
+        "5": 238
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 18,
+    "name": "Apple Watch Series 9",
+    "brand": "Apple",
+    "status": "In Stock",
+    "category": "Smart Watch",
+    "pricing": {
+      "current_price": 399,
+      "original_price": 429,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/jPZB4Dk3/watch-series-9-02.webp",
+      "gallery": [
+        "https://i.ibb.co.com/jPZB4Dk3/watch-series-9-02.webp",
+        "https://i.ibb.co.com/MDCwCHDF/watch-series-9-01.webp",
+        "https://i.ibb.co.com/MDKhtc0d/watch-series-9-03.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "45mm",
+        "type": "OLED",
+        "resolution": "396×484",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "S9 SiP",
+        "cores": 2
+      },
+      "battery": "18 hours",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 543,
+      "featured": [
+        {
+          "user": "Olivia Martin",
+          "rating": 5,
+          "comment": "Smooth and accurate health tracking.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 10,
+        "2": 16,
+        "3": 27,
+        "4": 54,
+        "5": 434
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 19,
+    "name": "JBL Charge 5",
+    "brand": "JBL",
+    "status": "In Stock",
+    "category": "Speaker",
+    "pricing": {
+      "current_price": 159,
+      "original_price": 179,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/KzqL80PV/charge-5-black-1.webp",
+      "gallery": [
+        "https://i.ibb.co.com/KzqL80PV/charge-5-black-1.webp",
+        "https://i.ibb.co.com/TBcZsyKw/charge-5-blue-2.webp",
+        "https://i.ibb.co.com/XxCGQkny/charge-5-green-3.webp",
+        "https://i.ibb.co.com/mCyBCb9Q/charge-5-grey-4.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "N/A",
+        "type": "Portable Speaker",
+        "resolution": "N/A",
+        "refresh_rate": "N/A",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "N/A",
+        "cores": 0
+      },
+      "battery": "20 hours",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.8,
+      "total_count": 734,
+      "featured": [
+        {
+          "user": "Tom Harris",
+          "rating": 5,
+          "comment": "Loud and clear sound.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 14,
+        "2": 22,
+        "3": 36,
+        "4": 73,
+        "5": 587
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  },
+  {
+    "id": 20,
+    "name": "GoPro HERO12 Black",
+    "brand": "GoPro",
+    "status": "In Stock",
+    "category": "Camera",
+    "pricing": {
+      "current_price": 399,
+      "original_price": 449,
+      "currency": "USD"
+    },
+    "media": {
+      "primary_image": "https://i.ibb.co.com/qMKSY0DS/Go-Pro-HERO12-Black-1.webp",
+      "gallery": [
+        "https://i.ibb.co.com/qMKSY0DS/Go-Pro-HERO12-Black-1.webp",
+        "https://i.ibb.co.com/rKYKbLDg/Go-Pro-HERO12-Black-2.webp",
+        "https://i.ibb.co.com/xq2zNwkk/Go-Pro-HERO12-Black-3.webp",
+        "https://i.ibb.co.com/DfhDzSzr/Go-Pro-HERO12-Black-4.webp"
+      ]
+    },
+    "technical_specifications": {
+      "display": {
+        "size": "2.27\"",
+        "type": "Touch LCD",
+        "resolution": "240×320",
+        "refresh_rate": "60 Hz",
+        "density": "460 ppi",
+        "additional": "Dynamic Island\nAlways-On display\nHDR display\nTrue Tone\nWide color (P3)"
+      },
+      "performance": {
+        "cpu": "GP2",
+        "cores": 4
+      },
+      "battery": "1720 mAh",
+      "camera": {
+        "main": "48-12-12 MP",
+        "front": "12 MP"
+      }
+    },
+    "reviews": {
+      "average_rating": 4.7,
+      "total_count": 468,
+      "featured": [
+        {
+          "user": "Jake Wilson",
+          "rating": 5,
+          "comment": "Perfect for travel and vlogging.",
+          "image_url": "https://i.ibb.co.com/gZ3Mv8bV/user.jpg",
+          "date": "24 January, 2023",
+          "images": []
+        }
+      ],
+      "breakdown": {
+        "1": 9,
+        "2": 14,
+        "3": 23,
+        "4": 46,
+        "5": 374
+      }
+    },
+    "colors": [
+      {
+        "name": "purple",
+        "bg": "bg-purple-900"
+      },
+      {
+        "name": "black",
+        "bg": "bg-black"
+      },
+      {
+        "name": "red",
+        "bg": "bg-red-600"
+      },
+      {
+        "name": "yellow",
+        "bg": "bg-yellow-400"
+      },
+      {
+        "name": "white",
+        "bg": "bg-gray-200"
+      }
+    ],
+    "storage_options": ["128GB", "256GB", "512GB", "1TB"],
+    "description": "Enhanced capabilities thanks lean A16 Bionic chip. A huge leap in battery life. Innovative safety features with crash detection. All in a dependable design.",
+    "long_description": "Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions."
+  }
+]

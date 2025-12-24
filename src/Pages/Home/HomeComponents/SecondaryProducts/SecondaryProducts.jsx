@@ -1,4 +1,4 @@
-import SecondaryProduct from "../SecondaryProduct/SecondaryProduct";
+import SecondaryProduct from "../../../../Components/SecondaryProduct/SecondaryProduct";
 
 const SecondaryProducts = () => {
   return (

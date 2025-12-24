@@ -9,6 +9,7 @@ import {
   FiChevronRight,
 } from "react-icons/fi";
 import { MdChevronRight } from "react-icons/md";
+import Breadcrumb from "../../Components/BreadCrumb/BreadCrumb";
 
 export default function AboutUsPage() {
   const stats = [
@@ -106,6 +107,7 @@ export default function AboutUsPage() {
           </div>
         </div>
       </div>
+      {/* <Breadcrumb/> */}
 
       {/* Hero Section */}
       <div className="bg-white">

@@ -1,7 +1,8 @@
-import playStation from "../../assets/PlayStation.png";
-import Macbook from "../../assets/MacBookPro14.png";
-import Headset from "../../assets/Headset.png";
-import VrHeadset from "../../assets/VrHeadset.png";
+import playStation from "../../../../assets/PlayStation.png";
+import Macbook from "../../../../assets/MacBookPro14.png";
+import Headset from "../../../../assets/Headset.png";
+import VrHeadset from "../../../../assets/VrHeadset.png";
+import { Link } from "react-router";
 const FeaturedProducts = () => {
   return (
     <section className="2xl:max-w-[1280px] mx-auto">
@@ -57,9 +58,10 @@ const FeaturedProducts = () => {
               The new 15‑inch MacBook Air makes room for more of what you love
               with a spacious Liquid Retina display.
             </p>
+            <Link to={"/shop"}>
             <button className=" font-medium text-base text-black border rounded-lg py-4 px-14 cursor-pointer">
               Shop Now
-            </button>
+            </button></Link>
           </div>
           <img className="h-177.5" src={Macbook} alt="" />
         </div>

@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         Component: Blogs
       },
       {
-        path: "/blogDetails",
+        path: "/blogDetails/:id",
         Component: BlogDetails
       },
       {

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useContext } from "react";
 import { FiChevronRight } from "react-icons/fi";
 import {
   MdSearch,
@@ -10,6 +10,8 @@ import {
   MdGamepad,
   MdCalendarToday,
 } from "react-icons/md";
+import { dataContext } from "../../Context/Context";
+import { Link } from "react-router";
 
 const categories = [
   { name: "All", icon: null },
@@ -58,15 +60,14 @@ const allPosts = [
 export default function Blogs() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");
+  const { blogs } = useContext(dataContext);
 
-  const filteredPosts = useMemo(() => {
-    return allPosts.filter(
-      (p) =>
-        (activeCategory === "All" || p.category === activeCategory) &&
-        p.title.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [activeCategory, search]);
-
+  const filteredPosts = blogs.filter(
+    (p) =>
+      (activeCategory === "All" || p.post?.category === activeCategory) &&
+      p?.post?.title.toLowerCase().includes(search.toLowerCase())
+  );
+  console.log(filteredPosts);
   return (
     <div className="bg-white min-h-screen text-black">
       {/* Breadcrumbs */}
@@ -80,7 +81,7 @@ export default function Blogs() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 pb-20">
+      <div className="max-w-7xl mx-auto px-4 pb-20 mt-5">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
           <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
 
@@ -99,7 +100,7 @@ export default function Blogs() {
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Sidebar */}
-          <aside className="lg:w-64 flex-shrink-0">
+          <aside className="lg:w-64 shrink-0">
             <h3 className="font-bold text-lg mb-6">Categories</h3>
             <div className="flex flex-col gap-2">
               {categories.map((cat) => (
@@ -132,10 +133,10 @@ export default function Blogs() {
                 className="flex flex-col sm:flex-row gap-6 pb-8 border-b border-gray-100 last:border-0 group"
               >
                 {/* Image Section */}
-                <div className="w-full sm:w-64 h-44 flex-shrink-0 overflow-hidden rounded-lg bg-[#F6F6F6]">
+                <div className="w-full sm:w-64 h-44 shrink-0 overflow-hidden rounded-lg bg-[#F6F6F6]">
                   <img
-                    src={post.img}
-                    alt={post.title}
+                    src={post.post.img}
+                    alt={post.post.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -144,25 +145,27 @@ export default function Blogs() {
                 <div className="flex flex-col justify-center flex-1">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-white bg-black px-2 py-0.5 rounded">
-                      {post.category}
+                      {post.post.category}
                     </span>
                     <span className="text-xs text-gray-400 flex items-center gap-1">
-                      <MdCalendarToday size={12} /> {post.date}
+                      <MdCalendarToday size={12} /> {post.post.date}
                     </span>
                   </div>
 
                   <h2 className="text-2xl font-bold mb-3 group-hover:text-gray-600 transition-colors leading-tight">
-                    {post.title}
+                    {post.post.title}
                   </h2>
 
                   <p className="text-gray-500 text-sm mb-4 line-clamp-2 leading-relaxed">
-                    {post.desc}
+                    {post.post.content[0]}
                   </p>
 
                   <div>
-                    <button className="text-sm font-bold border-b-2 border-black pb-0.5 hover:text-gray-500 hover:border-gray-300 transition-all">
-                      Read Article
-                    </button>
+                    <Link to={`/blogdetails/${post.id}`}>
+                      <button className="text-sm font-bold border-b-2 border-black pb-0.5 cursor-pointer hover:text-gray-500 hover:border-gray-300 transition-all">
+                        Read Article
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -170,7 +173,7 @@ export default function Blogs() {
 
             {filteredPosts.length === 0 && (
               <div className="py-20 text-center text-gray-400 border-2 border-dashed border-gray-100 rounded-xl">
-                No articles found for this selection.
+                No articles found.
               </div>
             )}
           </main>

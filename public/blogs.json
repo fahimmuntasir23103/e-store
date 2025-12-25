@@ -1,0 +1,292 @@
+[
+    {
+      "id": 1,
+      "post": {
+        "title": "Samsung Galaxy S24 Ultra: AI Meets Photography",
+        "category": "Phones",
+        "date": "August 5, 2025",
+        "author": "Sarah Mitchell",
+        "img": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=1200",
+        "content": [
+          "Samsung's latest flagship brings AI-powered photography to new heights. The Galaxy S24 Ultra features a revolutionary 200MP main sensor that uses advanced computational photography to capture stunning detail in any lighting condition.",
+          "The integrated S Pen has been refined with lower latency and new AI-assisted writing features. Taking notes feels more natural than ever, and the handwriting-to-text conversion is remarkably accurate across multiple languages.",
+          "Battery life remains exceptional, easily lasting a full day of heavy use. The adaptive refresh rate technology intelligently switches between 1Hz and 120Hz, conserving power without compromising the smooth user experience."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "James Chen",
+          "date": "August 7, 2025",
+          "text": "The camera improvements are incredible. Night mode photos look like they were taken in daylight."
+        },
+        {
+          "id": 2,
+          "user": "Emma Rodriguez",
+          "date": "August 9, 2025",
+          "text": "Best Android phone I've ever used. The S Pen integration is perfect for my workflow."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "post": {
+        "title": "Apple Watch Series 10: Health Tracking Redefined",
+        "category": "Smart Watches",
+        "date": "September 12, 2025",
+        "author": "Michael Torres",
+        "img": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=1200",
+        "content": [
+          "The Apple Watch Series 10 introduces blood glucose monitoring without invasive sensors, a breakthrough that could change diabetes management forever. The non-invasive optical sensors provide readings accurate enough for daily monitoring.",
+          "Sleep tracking has been completely overhauled with new algorithms that detect sleep apnea and provide detailed REM cycle analysis. The insights have genuinely helped improve my sleep quality over the past month of testing.",
+          "The larger display and thinner profile make this the most comfortable Apple Watch yet. The new titanium case options are lighter than aluminum while being significantly more durable than stainless steel."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Linda Park",
+          "date": "September 15, 2025",
+          "text": "As someone with pre-diabetes, the glucose monitoring feature is life-changing. Highly recommend."
+        },
+        {
+          "id": 2,
+          "user": "David Kumar",
+          "date": "September 18, 2025",
+          "text": "The sleep tracking is incredibly detailed. I've learned so much about my sleep patterns."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "post": {
+        "title": "Sony A7R VI: 100MP Full-Frame Powerhouse",
+        "category": "Cameras",
+        "date": "October 3, 2025",
+        "author": "Rachel Foster",
+        "img": "https://images.unsplash.com/photo-1662948261149-3f0a0ab0181b?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "content": [
+          "Sony's latest flagship mirrorless camera delivers a staggering 100-megapixel sensor that captures breathtaking detail. The dynamic range is exceptional, with 15+ stops allowing incredible flexibility in post-processing.",
+          "The autofocus system has been refined with AI-powered subject recognition that can track everything from wildlife to vehicles with remarkable precision. Eye-tracking works flawlessly even with subjects partially obscured.",
+          "Video capabilities are equally impressive, offering 8K recording at 60fps with no crop. The in-body stabilization is among the best we've tested, making handheld shooting viable in situations that previously required a gimbal."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Marcus Williams",
+          "date": "October 6, 2025",
+          "text": "Professional landscape photographer here - this camera is absolutely incredible. The detail is unmatched."
+        },
+        {
+          "id": 2,
+          "user": "Sophia Lee",
+          "date": "October 10, 2025",
+          "text": "The autofocus for wildlife photography is a game-changer. Never missing critical moments anymore."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "post": {
+        "title": "MacBook Pro M4: Apple Silicon's Ultimate Evolution",
+        "category": "Laptops",
+        "date": "November 8, 2025",
+        "author": "Alex Zhang",
+        "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200",
+        "content": [
+          "The M4 chip represents a quantum leap in performance for the MacBook Pro. With a 16-core CPU and 40-core GPU, this machine handles 8K video editing and 3D rendering tasks that would have required a high-end desktop just two years ago.",
+          "Battery life continues to impress, with real-world usage consistently delivering 18-20 hours of productivity work. The efficiency cores handle background tasks brilliantly, allowing the performance cores to sleep more often.",
+          "The new MiniLED display with 2000 nits peak brightness makes HDR content absolutely stunning. Working outdoors is now genuinely practical, and color accuracy remains reference-grade for professional work."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Jennifer Adams",
+          "date": "November 11, 2025",
+          "text": "As a video editor, this laptop has transformed my workflow. Rendering times are cut in half."
+        },
+        {
+          "id": 2,
+          "user": "Tom Bradley",
+          "date": "November 14, 2025",
+          "text": "The battery life is unbelievable. I regularly go two full work days without charging."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "post": {
+        "title": "Google Pixel 9 Pro: AI Photography Perfected",
+        "category": "Phones",
+        "date": "October 20, 2025",
+        "author": "Nina Patel",
+        "img": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=1200",
+        "content": [
+          "Google's computational photography has reached new heights with the Pixel 9 Pro. The Magic Editor now uses advanced AI to seamlessly remove objects, adjust lighting, and even change weather conditions in photos with stunning realism.",
+          "The new Tensor G4 chip brings on-device AI processing that feels genuinely magical. Real-time translation works flawlessly in conversations, and voice typing is so accurate I've nearly stopped using the keyboard.",
+          "Call screening and spam detection have been enhanced with AI that understands context. The phone now handles robocalls intelligently, saving precious time while never missing important calls from unknown numbers."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Robert Kim",
+          "date": "October 23, 2025",
+          "text": "The photo editing capabilities are mind-blowing. Results look completely natural."
+        },
+        {
+          "id": 2,
+          "user": "Amanda Scott",
+          "date": "October 26, 2025",
+          "text": "Best Android camera phone, hands down. The AI features actually feel useful, not gimmicky."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "post": {
+        "title": "Garmin Fenix 8: The Ultimate Adventure Watch",
+        "category": "Smart Watches",
+        "date": "August 28, 2025",
+        "author": "Chris Anderson",
+        "img": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1200",
+        "content": [
+          "The Fenix 8 is built for serious outdoor enthusiasts with military-grade durability and a stunning AMOLED display. The sapphire crystal lens is virtually scratch-proof, perfect for rugged adventures where lesser watches would fail.",
+          "Battery life in smartwatch mode lasts an impressive 29 days, and even in GPS mode, you'll get 89 hours of continuous tracking. Solar charging extends this even further, making it ideal for multi-day expeditions.",
+          "Navigation features include topographic maps with turn-by-turn directions, weather tracking, and a built-in LED flashlight. The training metrics are professional-grade, offering insights typically found only in dedicated sports science labs."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Jessica Turner",
+          "date": "August 31, 2025",
+          "text": "Took this on a two-week hiking trip in the Alps. Performance was flawless throughout."
+        },
+        {
+          "id": 2,
+          "user": "Mark Johnson",
+          "date": "September 3, 2025",
+          "text": "The training metrics have significantly improved my marathon preparation. Worth every penny."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "post": {
+        "title": "Canon EOS R5 Mark II: Hybrid Shooting Champion",
+        "category": "Cameras",
+        "date": "September 25, 2025",
+        "author": "Daniel Brooks",
+        "img": "https://images.unsplash.com/photo-1667967643798-3ae1f171d14f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "content": [
+          "Canon's updated hybrid shooter delivers exceptional performance for both photography and videography. The 45MP sensor strikes the perfect balance between resolution and low-light capability, performing admirably up to ISO 12800.",
+          "The standout feature is the completely redesigned cooling system that enables unlimited 8K recording. Overheating, which plagued the original R5, is now a non-issue even in hot weather conditions.",
+          "Autofocus has been enhanced with deep learning AI that recognizes and tracks an expanded range of subjects including vehicles, animals, and even specific sports equipment. The hit rate for in-focus shots is remarkably high."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Lisa Martinez",
+          "date": "September 28, 2025",
+          "text": "Perfect for wedding photography. The dual card slots and reliable autofocus give me peace of mind."
+        },
+        {
+          "id": 2,
+          "user": "Kevin White",
+          "date": "October 2, 2025",
+          "text": "The 8K video quality is stunning, and no overheating is a huge win for documentary work."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "post": {
+        "title": "Dell XPS 15 (2025): Creative Professional's Dream",
+        "category": "Laptops",
+        "date": "July 15, 2025",
+        "author": "Olivia Chen",
+        "img": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=1200",
+        "content": [
+          "The latest XPS 15 combines Intel's 14th Gen processors with NVIDIA's RTX 4070 GPU, creating a powerhouse for creative work. The 4K OLED display covers 100% of DCI-P3, making it perfect for color-critical photo and video editing.",
+          "The redesigned cooling system keeps the laptop remarkably quiet under load. Extended rendering sessions no longer sound like a jet engine, and thermal throttling is virtually eliminated.",
+          "Build quality remains exceptional with CNC-machined aluminum and carbon fiber construction. The keyboard and trackpad are best-in-class for Windows laptops, with satisfying travel and precision that rivals MacBooks."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Brian Thompson",
+          "date": "July 18, 2025",
+          "text": "The display is absolutely gorgeous. Photo editing on this screen is a joy."
+        },
+        {
+          "id": 2,
+          "user": "Rachel Green",
+          "date": "July 22, 2025",
+          "text": "Best Windows laptop I've owned. Performance and build quality are top-tier."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "post": {
+        "title": "Baldur's Gate 4: A New Era of RPG Excellence",
+        "category": "Gaming",
+        "date": "November 30, 2025",
+        "author": "Tyler Morgan",
+        "img": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200",
+        "content": [
+          "Larian Studios has done it again, delivering a sequel that somehow exceeds the masterpiece that was BG3. The story takes place 50 years after the Mind Flayer crisis, introducing a new threat that challenges everything we thought we knew about the Forgotten Realms.",
+          "Character creation has been expanded with new races, subclasses, and a deeper customization system. The choices feel genuinely impactful, with consequences that ripple through the entire 100+ hour campaign in surprising ways.",
+          "The combat system refines the turn-based formula with new environmental interactions and combo mechanics. Multiplayer has been enhanced with drop-in/drop-out co-op that seamlessly integrates up to six players without breaking the narrative flow."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Alex Rivera",
+          "date": "December 3, 2025",
+          "text": "Already 60 hours in and still discovering new storylines. This is GOTY material for sure."
+        },
+        {
+          "id": 2,
+          "user": "Samantha Lee",
+          "date": "December 7, 2025",
+          "text": "The writing is phenomenal. Every character feels alive with their own motivations and arcs."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "post": {
+        "title": "PS5 Pro: The Mid-Gen Upgrade We Needed",
+        "category": "Gaming",
+        "date": "December 10, 2025",
+        "author": "Jordan Walsh",
+        "img": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1200",
+        "content": [
+          "Sony's PS5 Pro delivers the performance upgrade that enthusiasts have been craving. With a significantly more powerful GPU and enhanced ray tracing capabilities, games finally hit that sweet spot of 4K60fps with high-quality graphics settings.",
+          "The AI-powered upscaling technology, PSSR 2.0, is remarkably effective. Games running at 1440p are upscaled to 4K with minimal artifacts, often looking better than native 4K rendering while maintaining higher frame rates.",
+          "Storage has been doubled to 2TB, addressing one of the biggest complaints about the base PS5. The upgraded cooling system runs quieter while handling the increased power draw, making for a more pleasant living room experience."
+        ]
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Marcus Davis",
+          "date": "December 13, 2025",
+          "text": "The performance boost in Spider-Man 2 is incredible. Ray tracing at 60fps is game-changing."
+        },
+        {
+          "id": 2,
+          "user": "Emily Watson",
+          "date": "December 16, 2025",
+          "text": "Finally, no more choosing between performance and quality modes. This is how games should run."
+        }
+      ]
+    }
+  ]

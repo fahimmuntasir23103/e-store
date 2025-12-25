@@ -3,12 +3,15 @@ import Sidebar from "./ShopComponents/Sidebar/Sidebar";
 import ProductSection from "./ShopComponents/ProductsSection/ProductsSection";
 import { dataContext } from "../../Context/Context";
 import { useContext, useState } from "react";
+import { useLocation } from "react-router";
 
 const Shop = () => {
   const data = useContext(dataContext);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-
+  const {search} = useLocation();
+  const selectedCategory = search.split("=")[1]
+  console.log(selectedCategory)
   const handleFilter = (e) => {
     const { name, value, checked } = e.target;
 
@@ -28,29 +31,32 @@ const Shop = () => {
     }
   };
 
-  const baseProducts = filteredProducts.length > 0 ? filteredProducts : data.products;
+  const baseProducts =
+    filteredProducts.length > 0 ? filteredProducts : data.products;
 
   const handleRatingFilter = (e) => {
     const value = e.target.value;
-    
+
     const productsCopy = [...baseProducts];
 
     if (value === "rating") {
       const sortedProducts = productsCopy.sort(
-        (productOne, productTwo) => 
+        (productOne, productTwo) =>
           productTwo.reviews.average_rating - productOne.reviews.average_rating
       );
       setFilteredProducts(sortedProducts);
     } else if (value === "low") {
       const sortedProducts = productsCopy.sort(
-        (productOne, productTwo) => 
-          parseFloat(productOne.pricing.current_price) - parseFloat(productTwo.pricing.current_price)
+        (productOne, productTwo) =>
+          parseFloat(productOne.pricing.current_price) -
+          parseFloat(productTwo.pricing.current_price)
       );
       setFilteredProducts(sortedProducts);
     } else if (value === "high") {
       const sortedProducts = productsCopy.sort(
-        (productOne, productTwo) => 
-          parseFloat(productTwo.pricing.current_price) - parseFloat(productOne.pricing.current_price)
+        (productOne, productTwo) =>
+          parseFloat(productTwo.pricing.current_price) -
+          parseFloat(productOne.pricing.current_price)
       );
       setFilteredProducts(sortedProducts);
     }
@@ -67,10 +73,14 @@ const Shop = () => {
           setSidebarOpen={setSidebarOpen}
           brands={data.brands}
           categories={data.categories}
+          selectedCategory={selectedCategory}
         />
 
         <div className="flex-1">
-          <ProductSection products={baseProducts} handleRatingFilter={handleRatingFilter} />
+          <ProductSection
+            products={baseProducts}
+            handleRatingFilter={handleRatingFilter}
+          />
         </div>
       </div>
     </div>

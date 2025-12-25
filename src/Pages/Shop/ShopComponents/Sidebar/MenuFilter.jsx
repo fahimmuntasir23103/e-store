@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiSearch, FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-const MenuFilter = ({ list, name, handleFilter}) => {
+const MenuFilter = ({ list, name, handleFilter, selectedCategory}) => {
   const [isOpen, setIsOpen] = useState(true);
 // console.log(handleFilter)
   return (
@@ -29,6 +29,7 @@ const MenuFilter = ({ list, name, handleFilter}) => {
             <label key={index} className="flex items-center cursor-pointer">
               <input
                 type="checkbox"
+                defaultChecked={selectedCategory?.toLowerCase() == li?.toLowerCase()}
                 onClick={handleFilter}
                 value={li}
                 name={name}

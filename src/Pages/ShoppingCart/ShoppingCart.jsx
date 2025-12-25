@@ -8,8 +8,7 @@ const ShoppingCart = () => {
   console.log(cart)
   return (
     <div className="bg-white min-h-screen text-black font-sans p-6 md:p-20">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-        {/* LEFT: SHOPPING CART LIST */}
+      <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-7">
           <h1 className="text-xl font-bold mb-10">Shopping Cart</h1>
 
@@ -20,7 +19,7 @@ const ShoppingCart = () => {
                 className="flex items-center gap-6 py-8 border-b border-gray-100 last:border-0"
               >
                 {/* Product Image */}
-                <div className="w-20 h-20 flex-shrink-0">
+                <div className="w-20 h-20 shrink-0">
                   <img
                     src={item.media.primary_image}
                     alt=""
@@ -29,7 +28,7 @@ const ShoppingCart = () => {
                 </div>
 
                 {/* Product Text */}
-                <div className="flex-grow max-w-[280px]">
+                <div className="grow max-w-70">
                   <h3 className="text-sm font-bold leading-tight">
                     {item.name}
                   </h3>
@@ -52,7 +51,7 @@ const ShoppingCart = () => {
                 </div>
 
                 {/* Price */}
-                <div className="flex-grow text-right">
+                <div className="grow text-right">
                   <span className="font-bold text-lg">${item.pricing.current_price}</span>
                 </div>
 
@@ -65,13 +64,12 @@ const ShoppingCart = () => {
           </div>
         </div>
 
-        {/* RIGHT: ORDER SUMMARY CARD */}
+
         <div className="lg:col-span-5">
           <div className="border border-gray-100 rounded-xl p-8 md:p-10">
             <h2 className="text-lg font-bold mb-8">Order Summary</h2>
 
             <div className="space-y-6">
-              {/* Promo Code Input */}
               <div className="space-y-2">
                 <label className="text-[11px] font-semibold text-gray-500">
                   Discount code / Promo code

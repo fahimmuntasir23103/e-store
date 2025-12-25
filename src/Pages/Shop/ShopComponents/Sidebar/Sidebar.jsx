@@ -2,7 +2,7 @@ import { FiX } from "react-icons/fi";
 import MenuFilter from "./MenuFilter";
 import FilterSection from "./FilterSection";
 
-const Sidebar = ({ sidebarOpen, setSidebarOpen, categories, handleFilter }) => {
+const Sidebar = ({ sidebarOpen, setSidebarOpen, categories, handleFilter, selectedCategory }) => {
     // console.log(categories, brands)
   return (
     <>
@@ -25,7 +25,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, categories, handleFilter }) => {
               <FiX size={22} />
             </button>
           </div>
-          <MenuFilter name="Categories" list={categories} handleFilter={handleFilter} />
+          <MenuFilter selectedCategory={selectedCategory} name="Categories" list={categories} handleFilter={handleFilter} />
         </div>
       </div>
     </>

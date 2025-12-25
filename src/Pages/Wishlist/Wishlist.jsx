@@ -8,15 +8,13 @@ export default function Wishlist() {
   const { handleCart } = useContext(cartContext);
 
   const handleMoveToCart = (product) => {
-    console.log("move = ", product);
     handleRemove(product);
     handleCart(product);
   };
-  // console.log(wishList[0])
   return (
     <div className="bg-white min-h-screen text-black font-sans p-6 md:p-20">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-        {/* LEFT: WISHLIST ITEMS */}
+      <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+
         <div className="lg:col-span-7">
           <div className="flex items-center justify-between mb-10">
             <h1 className="text-xl font-bold uppercase tracking-tight">
@@ -34,7 +32,7 @@ export default function Wishlist() {
                 className="flex items-center gap-6 py-8 border-b border-gray-100 last:border-0"
               >
                 {/* Product Image */}
-                <div className="w-20 h-20 flex-shrink-0 bg-[#FBFBFB] rounded-lg">
+                <div className="w-20 h-20 shrink-0 bg-[#FBFBFB] rounded-lg">
                   <img
                     src={item.media.primary_image}
                     alt=""
@@ -43,7 +41,7 @@ export default function Wishlist() {
                 </div>
 
                 {/* Product Text */}
-                <div className="flex-grow max-w-[280px]">
+                <div className="grow max-w-70">
                   <h3 className="text-sm font-bold leading-tight">
                     {item.name}
                   </h3>
@@ -82,7 +80,6 @@ export default function Wishlist() {
           </div>
         </div>
 
-        {/* RIGHT: ACCOUNT / QUICK ACTIONS (Matching the Summary Box Style) */}
         <div className="lg:col-span-5">
           <div className="border border-gray-100 rounded-xl p-8 md:p-10 sticky top-10">
             <h2 className="text-lg font-bold mb-8 uppercase tracking-tight">
@@ -106,7 +103,6 @@ export default function Wishlist() {
                 </div>
               </div>
 
-              {/* Primary Action */}
               <button className="w-full bg-black text-white py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-gray-900 transition-colors flex items-center justify-center gap-2">
                 Move All To Cart
               </button>

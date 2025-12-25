@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import {
   MdChevronRight,
   MdCalendarToday,
@@ -6,6 +6,8 @@ import {
   MdOutlineShare,
   MdStar,
 } from "react-icons/md";
+import { dataContext } from "../../Context/Context";
+import { Link, useParams } from "react-router";
 
 const post = {
   title: "iPhone 15 Pro: The Titanium Revolution",
@@ -36,6 +38,18 @@ const reviews = [
 ];
 
 export default function BlogDetails() {
+  const { id } = useParams();
+  const { blogs } = useContext(dataContext);
+  const findBlog = blogs.find((blog) => blog.id == id);
+
+  if (!findBlog) {
+    return (
+      <div className="h-screen w-full flex justify-center items-center">
+        <span className="font-bold uppercase">Loading Blogs....</span>
+      </div>
+    );
+  }
+  console.log(blogs);
   return (
     <div className="bg-white min-h-screen text-black antialiased font-sans">
       {/* 1. STANDARD TOP NAV BORDER */}
@@ -55,15 +69,16 @@ export default function BlogDetails() {
           <div className="lg:col-span-8">
             <header className="mb-10">
               <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">
-                {post.title}
+                {findBlog.post.title}
               </h1>
               <div className="flex items-center gap-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest py-4 border-y border-gray-100">
                 <span className="flex items-center gap-2">
                   <MdCalendarToday size={14} className="text-black" />{" "}
-                  {post.date}
+                  {findBlog.post.date}
                 </span>
                 <span className="flex items-center gap-2">
-                  <MdPerson size={14} className="text-black" /> {post.author}
+                  <MdPerson size={14} className="text-black" />{" "}
+                  {findBlog.post.author}
                 </span>
                 <span className="flex items-center gap-2 ml-auto cursor-pointer hover:text-black transition-colors">
                   <MdOutlineShare size={14} className="text-black" /> Share
@@ -73,14 +88,14 @@ export default function BlogDetails() {
 
             <div className="mb-12">
               <img
-                src={post.img}
+                src={findBlog.post.img}
                 alt=""
                 className="w-full grayscale hover:grayscale-0 transition-all duration-700 h-[450px] object-cover bg-[#F6F6F6]"
               />
             </div>
 
             <article className="space-y-8 text-gray-600 text-lg leading-relaxed border-b border-gray-100 pb-20">
-              {post.content.map((p, i) => (
+              {findBlog.post.content.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
             </article>
@@ -89,12 +104,12 @@ export default function BlogDetails() {
             <section className="mt-20">
               <div className="flex items-center justify-between mb-12">
                 <h3 className="text-xl font-bold uppercase tracking-widest">
-                  User Reviews ({reviews.length})
+                  User Reviews ({findBlog.reviews.length})
                 </h3>
               </div>
 
               <div className="space-y-10 mb-20">
-                {reviews.map((rev) => (
+                {findBlog.reviews.map((rev) => (
                   <div
                     key={rev.id}
                     className="border-b border-gray-50 pb-8 last:border-0"
@@ -172,9 +187,11 @@ export default function BlogDetails() {
                   Insights into our latest hardware releases and technical
                   breakthroughs.
                 </p>
-                <div className="bg-black text-white p-4 text-[10px] font-bold text-center tracking-widest cursor-pointer uppercase">
-                  View All News
-                </div>
+                <Link to="/blogs" className=" w-full h-full">
+                  <div className="bg-black text-white p-4 text-[10px] font-bold text-center tracking-widest cursor-pointer uppercase">
+                    View All Blogs
+                  </div>
+                </Link>
               </div>
 
               {/* LATEST LIST */}
@@ -183,13 +200,13 @@ export default function BlogDetails() {
                   Recent Posts
                 </h3>
                 <div className="space-y-8">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="group cursor-pointer">
+                  {blogs.reverse().slice(0,4).map((i) => (
+                    <div key={i.id} className="group cursor-pointer">
                       <p className="text-[9px] font-bold text-gray-300 uppercase mb-1">
-                        July 1{i}, 2025
+                        {i.post.date}
                       </p>
                       <h5 className="text-sm font-bold group-hover:text-gray-400 transition-colors leading-snug uppercase tracking-tight">
-                        Unlocking the potential of A17 Pro Architecture
+                        {i.post.title}
                       </h5>
                     </div>
                   ))}

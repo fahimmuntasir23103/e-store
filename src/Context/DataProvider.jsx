@@ -6,6 +6,7 @@ const DataProvider = ({ children }) => {
 
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
     fetch("/products.json")
@@ -17,9 +18,14 @@ const DataProvider = ({ children }) => {
       .then((res) => res.json())
       .then((res) => setCategories(res));
   },[]);
+  useEffect(() => {
+    fetch("/blogs.json")
+      .then((res) => res.json())
+      .then((res) => setBlogs(res));
+  },[]);
 
   return (
-    <dataContext.Provider value={{ products, categories }}>
+    <dataContext.Provider value={{ products, categories, blogs }}>
       {children}
     </dataContext.Provider>
   );

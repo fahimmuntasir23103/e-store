@@ -21,11 +21,13 @@ const PrimaryProduct = ({ product }) => {
           size={32}
         />
       </div>
-      <img
-        className="mx-auto my-4 w-40"
+      <div className="w-40 h-40 mx-auto">
+        <img
+        className="mx-auto my-4 h-full"
         src={product?.media.primary_image}
         alt=""
       />
+      </div>
       <div className="flex flex-col items-center text-center px-4 space-y-4">
         <h2>{product?.name} </h2>
         <span>${product?.pricing.current_price}</span>

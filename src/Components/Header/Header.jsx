@@ -1,25 +1,23 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import Logo from "../../assets/Logo.png";
-import {
-  FiSearch,
-  FiUser,
-  FiMenu,
-  FiX,
-  FiHelpCircle,
-  FiShoppingBag,
-} from "react-icons/fi";
+import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
-import { authContext } from "../../Context/Context";
+import { authContext, dataContext } from "../../Context/Context";
 
 const Header = () => {
   const { user, setUser, LogOutUser } = useContext(authContext);
+  const { products } = useContext(dataContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
+  const [toggleSearch, setToggleSearch] = useState(false);
+  const [searchProducts, setSearchProducts] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
+  const searchRef = useRef(null);
   const dropdownRef = useRef(null);
 
-  // Close dropdowns on window resize to prevent layout breaking
+  // Close dropdowns on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) setIsMenuOpen(false);
@@ -28,6 +26,7 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Close user dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -38,14 +37,25 @@ const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Close search dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setToggleSearch(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    setIsUserDropdownOpen(false); // Close other menu
+    setIsUserDropdownOpen(false);
   };
 
   const toggleUserDropdown = () => {
     setIsUserDropdownOpen(!isUserDropdownOpen);
-    setIsMenuOpen(false); // Close other menu
+    setIsMenuOpen(false);
   };
 
   const handleSignOut = () => {
@@ -58,26 +68,86 @@ const Header = () => {
     setIsUserDropdownOpen(false);
   };
 
+  const handleSearchClick = () => {
+    setToggleSearch(true);
+  };
+
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    setSearchValue(value);
+
+    if (value) {
+      setToggleSearch(true);
+      const filter = products.filter((product) =>
+        product.name.toLowerCase().includes(value.toLowerCase())
+      );
+      setSearchProducts(filter);
+    } else {
+      setToggleSearch(false);
+      setSearchProducts([]);
+    }
+  };
+
+  const clearSearch = () => {
+    setToggleSearch(false);
+    setSearchValue("");
+    setSearchProducts([]);
+  };
+
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 z-[100]">
-      <div className="2xl:max-w-[1280px] lg:max-w-[1120px] py-3 md:py-4 px-4 flex justify-between items-center mx-auto relative">
+    <header className="w-full bg-white shadow-sm sticky top-0 z-100">
+      <div className="2xl:max-w-7xl lg:max-w-280 py-3 md:py-4 px-4 flex justify-between items-center mx-auto relative">
         {/* --- Left: Logo & Search --- */}
         <div className="flex items-center gap-4 lg:gap-12">
           <Link to="/" onClick={() => setIsMenuOpen(false)}>
             <img className="h-8 md:h-10 w-auto" src={Logo} alt="Logo" />
           </Link>
 
-          <div className="relative hidden md:block">
+          <div ref={searchRef} className="relative hidden md:block">
             <FiSearch className="absolute top-1/2 -translate-y-1/2 text-xl ml-4 text-[#989898]" />
             <input
+              value={searchValue}
+              onClick={handleSearchClick}
+              onChange={handleSearchChange}
               className="bg-[#f5f5f5] p-3 pl-10 rounded-lg outline-none text-[#656565] text-sm w-[200px] lg:w-[300px]"
               type="text"
               placeholder="Search"
             />
+            {toggleSearch && (
+              <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-110 max-h-96 overflow-y-auto">
+                {searchProducts.length <= 0 && (
+                  <p className="text-sm text-gray-600">Search Products...</p>
+                )}
+                {searchProducts.map((searchProduct) => (
+                  <div key={searchProduct.id} onClick={clearSearch}>
+                    <Link to={`/productdetails/${searchProduct.id}`}>
+                      <div className="flex gap-3 py-3 hover:bg-gray-50 rounded-lg transition-colors">
+                        <img
+                          className="w-20 h-20 p-2 bg-gray-200 rounded object-cover"
+                          src={searchProduct.media.primary_image}
+                          alt={searchProduct.name}
+                        />
+                        <div className="flex flex-col justify-center">
+                          <span className="text-xs text-gray-500">
+                            {searchProduct.category}
+                          </span>
+                          <h3 className="font-bold text-sm">
+                            {searchProduct.name}
+                          </h3>
+                          <span className="text-sm font-semibold">
+                            ${searchProduct.pricing.current_price}
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
-        {/* --- Right: Nav & Icons --- */}
+        {/* Rest of your component remains the same */}
         <nav className="flex items-center gap-3 md:gap-8">
           {/* Desktop Links */}
           <ul className="hidden md:flex items-center gap-6 lg:gap-10 text-base">
@@ -148,18 +218,21 @@ const Header = () => {
               />
             </Link>
 
-            {/* --- USER DROPDOWN (RESPONSIVE) --- */}
+            {/* --- USER DROPDOWN --- */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleUserDropdown}
                 className="flex items-center justify-center text-[#1a1a1a] cursor-pointer"
               >
                 {user ? (
-                  <img src={user.photoURL} className="w-7 rounded-full" />
+                  <img
+                    src={user.photoURL}
+                    className="w-7 rounded-full"
+                    alt="User"
+                  />
                 ) : (
                   <FiUser size={26} />
                 )}
-                {/* <FiUser size={26} /> */}
               </button>
 
               {isUserDropdownOpen && (
@@ -167,7 +240,7 @@ const Header = () => {
                   <div className="px-4 py-4 text-center">
                     {user ? (
                       <p className="text-sm font-bold text-black">
-                        Hey,{user.displayName} Welcome to E-Store
+                        Hey, {user.displayName} Welcome to E-Store
                       </p>
                     ) : (
                       <p className="text-[11px] text-gray-400 mt-1">
@@ -221,7 +294,7 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* --- MOBILE NAV (FLOATING OVERLAY) --- */}
+      {/* --- MOBILE NAV --- */}
       <div
         className={`md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-2xl transition-all duration-300 z-90 ${
           isMenuOpen

@@ -4,11 +4,13 @@ import { FiSearch, FiUser, FiMenu, FiX } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
-import { authContext, dataContext } from "../../Context/Context";
+import { authContext, cartContext, dataContext, wishListContext } from "../../Context/Context";
 
 const Header = () => {
   const { user, setUser, LogOutUser } = useContext(authContext);
   const { products } = useContext(dataContext);
+  const { cart } = useContext(cartContext);
+  const { wishList } = useContext(wishListContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
   const [toggleSearch, setToggleSearch] = useState(false);
@@ -204,14 +206,16 @@ const Header = () => {
           </ul>
 
           <div className="flex items-center gap-3 md:gap-6">
-            <Link to="/wishlist">
+            <Link className="relative" to="/wishlist">
+            <span className="h-4 w-4 rounded-full bg-red-600 absolute -right-1 -top-1 text-center text-xs text-white">{wishList.length}</span>
               <HiOutlineHeart
                 className="text-[#1a1a1a] hover:text-red-500 transition-colors"
                 size={26}
               />
             </Link>
 
-            <Link to="/cart">
+            <Link className="relative" to="/cart">
+            <span className="h-4 w-4 rounded-full bg-red-600 absolute -right-1 -top-1 text-center text-xs text-white">{cart.length}</span>
               <IoCartOutline
                 className="text-[#1a1a1a] hover:text-blue-500 transition-colors"
                 size={26}

@@ -1,11 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { MdClose, MdAdd, MdRemove } from "react-icons/md";
 import { Link } from "react-router";
 import { cartContext } from "../../Context/Context";
+import CartItem from "../../Components/CartItem/CartItem";
 
 const ShoppingCart = () => {
   const { handleRemove, cart } = useContext(cartContext);
-  console.log(cart)
+
+  // console.log(cart)
+  
   return (
     <div className="bg-white min-h-screen text-black font-sans p-6 md:p-20">
       <div className="max-w-300 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -14,52 +17,7 @@ const ShoppingCart = () => {
 
           <div className="space-y-0">
             {cart.map((item) => (
-              <div
-                key={item.id}
-                className="flex items-center gap-6 py-8 border-b border-gray-100 last:border-0"
-              >
-                {/* Product Image */}
-                <div className="w-20 h-20 shrink-0">
-                  <img
-                    src={item.media.primary_image}
-                    alt=""
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-
-                {/* Product Text */}
-                <div className="grow max-w-70">
-                  <h3 className="text-sm font-bold leading-tight">
-                    {item.name}
-                  </h3>
-                  <p className="text-[11px] text-gray-400 mt-1">
-                    #{item.id}225139526913{item.id}
-                  </p>
-                </div>
-
-                {/* Quantity Selector */}
-                <div className="flex items-center gap-3">
-                  <button className="text-gray-400">
-                    <MdRemove size={16} />
-                  </button>
-                  <div className="w-10 h-8 border border-gray-200 flex items-center justify-center rounded text-sm font-medium">
-                    1
-                  </div>
-                  <button className="text-gray-400">
-                    <MdAdd size={16} />
-                  </button>
-                </div>
-
-                {/* Price */}
-                <div className="grow text-right">
-                  <span className="font-bold text-lg">${item.pricing.current_price}</span>
-                </div>
-
-                {/* Close Icon */}
-                <button onClick={()=> handleRemove(item)} className="ml-4 text-gray-300 cursor-pointer">
-                  <MdClose size={20} />
-                </button>
-              </div>
+              <CartItem key={item.id} handleRemove={handleRemove} item={item}/>
             ))}
           </div>
         </div>
